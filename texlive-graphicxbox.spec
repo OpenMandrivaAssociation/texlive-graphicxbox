@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-graphicxbox
 Version:	1.0
-Release:	3
+Release:	4
 Summary:	Insert a graphical image as a background
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/graphicxbox
