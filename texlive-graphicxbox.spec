@@ -1,19 +1,13 @@
-# revision 32630
-# category Package
-# catalog-ctan /macros/latex/contrib/graphicxbox
-# catalog-date 2014-01-10 18:49:42 +0100
-# catalog-license lppl
-# catalog-version 1.0
 Name:		texlive-graphicxbox
-Version:	1.0
-Release:	6
+Version:	32630
+Release:	1
 Summary:	Insert a graphical image as a background
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/graphicxbox
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphicxbox.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphicxbox.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphicxbox.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphicxbox.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphicxbox.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphicxbox.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ background color, while \fgraphicxbox does the same thing, but
 also draws a colored frame around the box.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -61,7 +55,8 @@ also draws a colored frame around the box.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
