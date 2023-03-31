@@ -1,6 +1,6 @@
 Name:		texlive-graphicxbox
 Version:	32630
-Release:	1
+Release:	2
 Summary:	Insert a graphical image as a background
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/graphicxbox
