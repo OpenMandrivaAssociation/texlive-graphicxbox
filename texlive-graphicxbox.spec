@@ -3,7 +3,7 @@ Version:	32630
 Release:	2
 Summary:	Insert a graphical image as a background
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/graphicxbox
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/graphicxbox
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphicxbox.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphicxbox.doc.r%{version}.tar.xz
